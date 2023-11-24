@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book Categories</title>
+        <link rel="stylesheet" href="stles.css">
+        <style>
+            .row{
+                display: flex;
+                display: grid;
+                height: 88%;
+                align-items: center;
+            }
+            .col{
+                flex-basis: 50%;
+            }
+            h1{
+                color: black;
+                font-size: 100px;
+            }
+            p{
+                color:black;
+                font-size: 15px;
+                line-height: 15px;
+                word-spacing: normal;
+                
+            }
+            
+        </style>
+    </head>
+
+
+
+<body style="background-color: white;">
+    
+    <div class="navbar" style="background-color: white">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Book Categories 
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+            <a href="categories.html">To Kill a Mockingbird</a>
+            <a href="categories.html">Moby-Dick</a>
+            <a href="categories.html">Brave New World</a>
+            <a href="categories.html">More...</a>
+            </div>
+        </div>
+        <a href="cart.html">Cart</a>
+        <a href="contact.html">Contact Us</a>
+        
+        </div>
+
+        
+            
+                
+                <div class="container">
+                    <section>
+                        <div class="container">
+                            <div class="book-list">
+                                <h2>Book List</h2>
+                                <ul id="book-list">
+                                    <!-- Books will be displayed here -->
+                                </ul>
+                            </div>
+                            <div class="add-book-form">
+                                <h2>Add New Book</h2>
+                                <form id="add-book-form">
+                                    <input type="text" id="title" placeholder="Book Title" required>
+                                    <input type="text" id="author" placeholder="Author" required>
+                                    <input type="text" id="genre" placeholder="Genre" required>
+                                    <button type="submit">Add Book</button>
+                                </form>
+                            </div>
+                            <div class="search-bar">
+                                <h2>Search for Books</h2>
+                                <input type="text" id="search" placeholder="Enter search term">
+                                <button type="button" onclick="searchBooks()">Search</button>
+                            </div>
+                        </div>
+                        <script src="main.js"></script> <!-- Connect your JavaScript file here -->
+                    </section>
+                    
+                        
+                    <div class="card__container">
+                                    
+                        
+                        
+                            
+                            
+
+                                                    
+                            
+                        
+                        
+                        
+
+                        
+                        <!--this the old part-->
+                        <article class="card__article">
+                                        <img src="image/mockingbird.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">The Mocking bird</span>
+                                            <h2 class="card__title">Harper lee</h2>
+                                            <p>12.99</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+                                    <article class="card__article">
+                                        <img src="image/1984s2.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">1984</span>
+                                            <h2 class="card__title">George Orwell</h2>
+                                            <p>9.9</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+                                        
+                                    <article class="card__article">
+                                        <img src="image/gateby.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">The great gatsby</span>
+                                            <h2 class="card__title">F. Scott Fitzgerald</h2>
+                                            <p>11.50</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+                                    <article class="card__article">
+                                        <img src="image/Moby dick.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">Moby-Dick</span>
+                                            <h2 class="card__title">Herman Melvile</h2>
+                                            <p>13.50</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+            
+                                    <article class="card__article">
+                                        <img src="image/brave  new world.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">Brave New World</span>
+                                            <h2 class="card__title">Aldous Huxley</h2>
+                                            <p>10.75</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+                                    <article class="card__article">
+                                        <img src="image/pride and prejudice.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">Pride and Prejudice</span>
+                                            <h2 class="card__title">Jane Austen</h2>
+                                            <p>9.99</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+                                    <article class="card__article">
+                                        <img src="image/catcher.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">Catcher In The Rye</span>
+                                            <h2 class="card__title">J.D. Salinger</h2>
+                                            <p>8.50</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+                                    
+                                    <article class="card__article">
+                                        <img src="image/ord of the ring.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">Lord Of The Ring</span>
+                                            <h2 class="card__title">J.R.R. Tolkien</h2>
+                                            <p>8.50</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+                                    <article class="card__article">
+                                        <img src="image/hobbit.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">Hobbit</span>
+                                            <h2 class="card__title">J.R.R. Tolkien</h2>
+                                            <p>15.99</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+                                    
+                                    <article class="card__article">
+                                        <img src="image/davinci code.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">Davinci Code</span>
+                                            <h2 class="card__title">Dan Brown</h2>
+                                            <p>15.45</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+            
+                                    <article class="card__article">
+                                        <img src="image/the alchemist.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">The Alchemist</span>
+                                            <h2 class="card__title">Paulo Coelho</h2>
+                                            <p>10.50</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+                                    <article class="card__article">
+                                        <img src="image/war and peace.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">War and Peace</span>
+                                            <h2 class="card__title">Leo Tolstoy</h2>
+                                            <p>16.25</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+                                    <article class="card__article">
+                                        <img src="image/the count of monty cristo.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">Story of Montey</span>
+                                            <h2 class="card__title">Oscar Wilde</h2>
+                                            <p>12.25</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+            
+                                    <article class="card__article">
+                                        <img src="image/Huck finn.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">The Adventures of Huckleberry Finn</span>
+                                            <h2 class="card__title">Mark twain</h2>
+                                            <p>10.25</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+            
+                                    <article class="card__article">
+                                        <img src="image/Jane Eyre.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">jan Eyre</span>
+                                            <h2 class="card__title">Charlotte Bronte</h2>
+                                            <p>9.50</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+            
+            
+                                    <article class="card__article">
+                                        <img src="image/the road.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">The Road</span>
+                                            <h2 class="card__title">Cormac McCarthy</h2>
+                                            <p>13.75</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+            
+            
+                                    <article class="card__article">
+                                        <img src="image/frakenstine.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">Frankestine</span>
+                                            <h2 class="card__title">Mary Shelley</h2>
+                                            <p>11.25</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+            
+                                    <article class="card__article">
+                                        <img src="image/the stand.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">The Stand</span>
+                                            <h2 class="card__title">Stephen King</h2>
+                                            <p>12.25</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+            
+            
+                                    <article class="card__article">
+                                        <img src="image/crime and punishment.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">Crime and Punishment</span>
+                                            <h2 class="card__title">Fyodor Dostoevsky</h2>
+                                            <p>16.50</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+            
+                                    <article class="card__article">
+                                        <img src="image/les miserable.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">Les Miserable</span>
+                                            <h2 class="card__title">Victor Hugo</h2>
+                                            <p>13.99</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+                                    <article class="card__article">
+                                        <img src="image/the shining.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">The Shining</span>
+                                            <h2 class="card__title">Stephen King</h2>
+                                            <p>11.75</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+                                    <article class="card__article">
+                                        <img src="image/odyssey1.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">Odyssey</span>
+                                            <h2 class="card__title">Homer</h2>
+                                            <p>12.25</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+            
+                                    <article class="card__article">
+                                        <img src="image/stranger1.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">The Stranger</span>
+                                            <h2 class="card__title">Albert Camus</h2>
+                                            <p>12.25</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+            
+                                    <article class="card__article">
+                                        <img src="image/gone with the wind.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">Gone With The Wild</span>
+                                            <h2 class="card__title">Margaret Mitchell</h2>
+                                            <p>13.25</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+            
+                                    <article class="card__article">
+                                        <img src="image/the kite runner.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">The Kite Runner</span>
+                                            <h2 class="card__title">Khaled Hosseini</h2>
+                                            <p>12.25</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+            
+                                    <article class="card__article">
+                                        <img src="image/the bell jar.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">The Bell Jar</span>
+                                            <h2 class="card__title">Sylvia Plath</h2>
+                                            <p>10.99</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+            
+                                    <article class="card__article">
+                                        <img src="image/the count of monty cristo.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">The Count Of Montey Cristo</span>
+                                            <h2 class="card__title">Alexandre Dumas</h2>
+                                            <p>12.99</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+            
+                                    <article class="card__article">
+                                        <img src="image/anna karanetina.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">Anna carena</span>
+                                            <h2 class="card__title">Leo Tolstoy</h2>
+                                            <p>12.75</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+                                    <article class="card__article">
+                                        <img src="image/the grapes of wrath.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">Grape Of Wrath</span>
+                                            <h2 class="card__title">Charles Dickens</h2>
+                                            <p>11.99</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+                                    <article class="card__article">
+                                        <img src="image/Dorian Gray.png" alt="image" class="card__img">
+                        
+                                        <div class="card__data">
+                                            <span class="card__description">The Picture of Dorian Gray</span>
+                                            <h2 class="card__title">Oscar Wilde</h2>
+                                            <p>11.99</p>
+                                            <a href="categories.html" class="card__button">Add to Cart</a>
+                                        </div>
+                                    </article>
+            
+            
+            
+            
+                            
+                </div>
+            
+
+
+
+
+</body>
+
+
+
+</html>
